@@ -2,6 +2,50 @@
   <html>
   <head>
     <title>Fundamental Physical Constants</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #333;
+        line-height: 1.6;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden; /* Ensures rounded corners apply to content */
+      }
+      th, td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        background-color: #4CAF50; /* A nice green for headers */
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center; /* Center header text */
+      }
+      tbody tr:nth-child(even) {
+        background-color: #f2f2f2; /* Light grey for even rows */
+      }
+      tbody tr:hover {
+        background-color: #e6e6e6; /* Slightly darker grey on hover */
+        cursor: pointer;
+      }
+      td:nth-child(3), /* Value column */
+      td:nth-child(4)  /* Relative standard uncertainty column */
+      {
+        font-family: 'Consolas', 'Courier New', monospace; /* Monospace for values */
+        text-align: right; /* Align numbers to the right */
+      }
+      td:nth-child(1) { /* Symbol column */
+        font-weight: bold;
+        color: #0056b3; /* A distinct color for symbols */
+      }
+    </style>
   </head>
   <body>
     <table>
